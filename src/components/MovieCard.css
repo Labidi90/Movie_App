@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Work+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Source+Serif+Pro:ital@1&family=Work+Sans:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.card-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  width: 450px;
+  height: 750px;
+  margin: 70px 50px;
+  padding: 25px;
+  background-color: rgb(0, 0, 0) !important;
+  box-shadow: inset 0 5px 10px rgb(255, 242, 63);
+}
+
+.card:hover {
+  border: 2px solid black;
+  box-shadow: inset 0 10px 20px yellow;
+  cursor: pointer;
+}
+
+.card-body {
+  margin-top: 30px;
+}
+
+.card-title {
+  font-size: 34px;
+  font-weight: bold;
+  color: rgb(221, 188, 0);
+}
+
+.card-rate {
+  font-size: 16px;
+}
+
+.card-date {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(221, 188, 0);
+}
+
+.card-type {
+  font-family: "Source Serif Pro", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.card-trailer {
+  font-weight: bold;
+  color: red;
+}
+
+.card-description {
+  font-family: "Source Serif Pro", Arial, sans-serif;
+  color: white;
+}
