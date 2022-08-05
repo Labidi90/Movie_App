@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import MovieList from "./components/MovieList";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { movies } from "./Data";
 import AddMovie from "./components/AddMovie";
 import "./App.css";
 import Filter from "./components/Filter";
+import Movie from "./components/Movie";
 
 const App = () => {
   const [film, setFilm] = useState(movies);
@@ -35,15 +37,24 @@ const App = () => {
         setSearchp={hndlsearch}
       />
 
-      <MovieList
-        movies={film.filter(
-          (el) =>
-            el.title.toLowerCase().includes(search.toLowerCase().trim()) &&
-            el.rating >= rating
-        )}
-      />
-
       <AddMovie handleFilmp={handleFilm} />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <MovieList
+              movies={film.filter(
+                (el) =>
+                  el.title
+                    .toLowerCase()
+                    .includes(search.toLowerCase().trim()) &&
+                  el.rating >= rating
+              )}
+            />
+          }
+        />
+        <Route path="/movies/:id" element={<Movie />} />
+      </Routes>
     </div>
   );
 };

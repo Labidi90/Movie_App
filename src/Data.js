@@ -1,6 +1,6 @@
 export const movies = [
   {
-    id: Math.random(),
+    id: 1,
     title: "Gladiator",
     date: 2000,
     type: "Action, Adventure, Drama",
@@ -12,7 +12,7 @@ export const movies = [
     rating: 90,
   },
   {
-    id: Math.random(),
+    id: 2,
     title: "The Hitman's Bodyguard",
     date: 2017,
     type: " Action, Comedy, Crime",
@@ -24,7 +24,7 @@ export const movies = [
     rating: 70,
   },
   {
-    id: Math.random(),
+    id: 3,
     title: "The notebook",
     date: 2004,
     type: "Drama, Romance",
@@ -36,7 +36,7 @@ export const movies = [
     rating: 60,
   },
   {
-    id: Math.random(),
+    id: 4,
     title: "Fast and furious 5",
     date: 2011,
     type: "Action, Crime, Thriller",
@@ -48,7 +48,7 @@ export const movies = [
     rating: 80,
   },
   {
-    id: Math.random(),
+    id: 5,
     title: "EAT PRAY LOVE",
     date: 2010,
     type: "Biography, Drama, Romance",
@@ -60,7 +60,7 @@ export const movies = [
     rating: 40,
   },
   {
-    id: Math.random(),
+    id: 6,
     title: "Spectre",
     date: 2015,
     type: " Action, Adventure, Thriller",
@@ -72,7 +72,7 @@ export const movies = [
     rating: 80,
   },
   {
-    id: Math.random(),
+    id: 7,
     title: "Cop Out",
     date: 2010,
     type: "Action, Comedy, Crime",
@@ -84,7 +84,7 @@ export const movies = [
     rating: 70,
   },
   {
-    id: Math.random(),
+    id: 8,
     title: "The family",
     date: 2013,
     type: "Comedy, Crime, Thriller",
@@ -96,7 +96,7 @@ export const movies = [
     rating: 90,
   },
   {
-    id: Math.random(),
+    id: 9,
     title: "John Q",
     date: 2002,
     type: "Crime, Drama, Thriller",
@@ -108,7 +108,7 @@ export const movies = [
     rating: 100,
   },
   {
-    id: Math.random(),
+    id: 10,
     title: "Lawless",
     date: 2012,
     type: "Biography, Crime, Drama",
@@ -120,7 +120,7 @@ export const movies = [
     rating: 100,
   },
   {
-    id: Math.random(),
+    id: 11,
     title: "The equaliser",
     date: 2014,
     type: " Action, Crime, Thriller",
@@ -132,7 +132,7 @@ export const movies = [
     rating: 90,
   },
   {
-    id: Math.random(),
+    id: 12,
     title: "The persuit of happyness",
     date: 2006,
     type: "Biography, Drama",
@@ -144,7 +144,7 @@ export const movies = [
     rating: 100,
   },
   {
-    id: Math.random(),
+    id: 13,
     title: "Dog",
     date: 2022,
     type: "Comedy, Drama",
@@ -156,7 +156,7 @@ export const movies = [
     rating: 40,
   },
   {
-    id: Math.random(),
+    id: 14,
     title: "Troy",
     date: 2004,
     type: "Drama, History",
@@ -168,7 +168,7 @@ export const movies = [
     rating: 100,
   },
   {
-    id: Math.random(),
+    id: 15,
     title: "The intern",
     date: 2015,
     type: "Comedy, Drama",
@@ -180,7 +180,7 @@ export const movies = [
     rating: 80,
   },
   {
-    id: Math.random(),
+    id: 16,
     title: "Hercules",
     date: 2014,
     type: "Action, Adventure, Fantasy",

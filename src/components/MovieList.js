@@ -12,8 +12,8 @@ const MovieList = ({ movies }) => {
         flexWrap: "wrap",
       }}
     >
-      {movies.map((movie, i) => (
-        <MovieCard moviep={movie} key={i} />
+      {movies.map((movie) => (
+        <MovieCard moviep={movie} key={movie.id} />
       ))}
     </div>
   );

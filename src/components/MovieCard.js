@@ -2,9 +2,11 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import { Rating } from "react-simple-star-rating";
 import "./MovieCard.css";
+import { Link } from "react-router-dom";
 
 const MovieCard = ({ moviep }) => {
-  console.log(moviep);
+  const { id, title, posterURL, description, trailer } = moviep;
+  // console.log(moviep);
   return (
     <div className="card-group">
       <Card className="card">
@@ -30,6 +32,9 @@ const MovieCard = ({ moviep }) => {
             Watch the trailer :{" "}
             <Card.Link className="card-link">{moviep.trailer}</Card.Link>
           </Card.Text>
+          <Link to={`/movies/${id}`} className="btn btn-primary">
+            More info
+          </Link>
         </Card.Body>
       </Card>
     </div>
