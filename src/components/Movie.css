@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Work+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Source+Serif+Pro:ital@1&family=Work+Sans:wght@300&display=swap");
+
+.movie-card {
+  width: 90%;
+  height: 570px;
+  margin: 20px auto;
+}
+
+.movie-title {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 40px;
+  color: rgb(221, 188, 0);
+}
+
+.movie-description {
+  margin: 20px 200px 20px;
+  font-family: "Roboto", Arial, sans-serif;
+  color: white;
+}
+
+iframe {
+  margin: 10px auto;
+  border-radius: 20px;
+  border: 1px solid red;
+}

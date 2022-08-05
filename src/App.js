@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import MovieList from "./components/MovieList";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -29,31 +29,34 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1>Best Movies</h1>
-      <Filter
-        ratingp={rating}
-        setRatingp={handleRating}
-        searchp={search}
-        setSearchp={hndlsearch}
-      />
+      <h1 className="app-title">Best Movies</h1>
 
-      <AddMovie handleFilmp={handleFilm} />
       <Routes>
         <Route
           path="/"
           element={
-            <MovieList
-              movies={film.filter(
-                (el) =>
-                  el.title
-                    .toLowerCase()
-                    .includes(search.toLowerCase().trim()) &&
-                  el.rating >= rating
-              )}
-            />
+            <Fragment>
+              <Filter
+                ratingp={rating}
+                setRatingp={handleRating}
+                searchp={search}
+                setSearchp={hndlsearch}
+              />
+              <AddMovie handleFilmp={handleFilm} />
+              <MovieList
+                movies={film.filter(
+                  (el) =>
+                    el.title
+                      .toLowerCase()
+                      .includes(search.toLowerCase().trim()) &&
+                    el.rating >= rating
+                )}
+              />
+            </Fragment>
           }
         />
-        <Route path="/movies/:id" element={<Movie />} />
+
+        <Route path="/:id" element={<Movie />} />
       </Routes>
     </div>
   );
